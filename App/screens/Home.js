@@ -54,7 +54,7 @@ class HomeScreen extends React.Component {
     return (
       <LinearGradient colors={['#00537d', '#00bdb7']} style={styles.linearGradient}>
         <View style={styles.contentCenter}>
-          <Image source={require('../img/survey-icon-12.png')} style={styles.surveyIconLarge} />
+          <Image source={require('../img/survey-icon-white.png')} style={styles.surveyIconLarge} />
           <Text style={{color: 'white', fontSize: 20, fontWeight: 'bold'}}>
             Daily Survey
           </Text>
