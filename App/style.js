@@ -8,7 +8,16 @@ var styles = StyleSheet.create({
   content:{
     paddingLeft: 10,
     paddingRight: 10,
-    alignItems: 'center'
+    alignItems: 'stretch',
+    flex: 1,
+    justifyContent: 'center',
+  },
+  contentCenter:{
+    paddingLeft: 10,
+    paddingRight: 10,
+    alignItems: 'center',
+    flex: 1,
+    justifyContent: 'center',
   },
   buttonText: {
     width: 210,
@@ -40,6 +49,7 @@ var styles = StyleSheet.create({
   timeText: {
     color: 'white',
     fontSize: 50,
+    textAlign: 'center',
   },
   nomoralText: {
     color: 'white',
@@ -80,9 +90,11 @@ var styles = StyleSheet.create({
   },
   boxQuestion:{
     backgroundColor: 'white',
-    width: '100%',
     height: 120,
     marginBottom: 10,
+    flex: 1,
+    alignItems: 'stretch', 
+    justifyContent: 'center',
   },
   panel: {
     backgroundColor: 'white',
@@ -93,7 +105,7 @@ var styles = StyleSheet.create({
     alignItems: 'center',
   },
   buttonQuestionSelect:{
-    width: 100,
+    width: 80,
     height: 24,
     backgroundColor: '#b9e986',
     borderRadius: 15,
@@ -104,7 +116,7 @@ var styles = StyleSheet.create({
     fontSize: 12,
   },
   buttonQuestionNotSelect:{
-    width: 100,
+    width: 80,
     height: 24,
     backgroundColor: '#d3d3d3',
     borderRadius: 15,

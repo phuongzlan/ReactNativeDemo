@@ -62,7 +62,7 @@ class DetailScreen extends React.Component{
               }}>
             <Icon name='keyboard-arrow-left' /> Back 
           </Button>
-          <Image source={require('../img/survey-icon-12.png')} style={{height:40, width:40}} />
+          <Image source={require('../img/survey-icon-12.png')} style={styles.surveyIconNav} />
           <Button style={{color:'black'}}>
             Next <Icon name='keyboard-arrow-right' />
           </Button>
@@ -82,6 +82,7 @@ class DetailScreen extends React.Component{
                 </Text>
               </View>
               <View style={styles.boxQuestionRow}>
+                <View style={{flex: 1, alignItems: 'stretch', justifyContent: 'center', flexDirection: 'row'}}>
                 <Button style={this.state.Questions[0].ans == 1 ? styles.buttonQuestionSelect: styles.buttonQuestionNotSelect}
                   onPress={()=>{
                     this.state.Questions[0].ans = 1;
@@ -99,6 +100,7 @@ class DetailScreen extends React.Component{
                     this.forceUpdate();
                   }}
                   > No Change </Button>
+                </View>
               </View>
             </View>
             <View style={styles.boxQuestion}>

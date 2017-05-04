@@ -53,7 +53,7 @@ class HomeScreen extends React.Component {
     const { navigate } = this.props.navigation;
     return (
       <LinearGradient colors={['#00537d', '#00bdb7']} style={styles.linearGradient}>
-        <View style={styles.content}>
+        <View style={styles.contentCenter}>
           <Image source={require('../img/survey-icon-12.png')} style={styles.surveyIconLarge} />
           <Text style={{color: 'white', fontSize: 20, fontWeight: 'bold'}}>
             Daily Survey
@@ -82,7 +82,7 @@ class HomeScreen extends React.Component {
               {
                 (fill) => (
                   <View style={styles.insiteCircle}>
-                    <Image source={require('../img/Bell.png')} style={styles.bellIcon} />
+                    <Icon name='notifications-active' color='white' size={20}/>
                     <View style={styles.boxInsiteCircle}>
                       <Text style={{color: 'white', fontSize:31, fontWeight: 'bold'}}>
                         5
@@ -97,7 +97,7 @@ class HomeScreen extends React.Component {
             </AnimatedCircularProgress>
           </View>
           <Button
-            buttonStyle={styles.buttonText}
+            buttonStyle={styles.buttonText} fontSize={19}
             onPress={() => navigate('Detail')} 
             title='Take Survey'
           />
