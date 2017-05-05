@@ -118,11 +118,13 @@ class DetailScreen extends React.Component{
                     <Text style={{color:'black', fontSize: 11}}>Excellent </Text> 
                   </View>
                   <Slider
-                    value={this.state.Questions[1].ans/10}
-                    step={0.1}
+                    value={this.state.Questions[1].ans}
+                    step={1}
+                    maximumValue={10}
                     thumbTintColor={'#d6866d'}
+                    minimumTrackTintColor={'#d6866d'}
                     onValueChange={(value) =>{
-                      this.state.Questions[1].ans = parseInt(value*10);
+                      this.state.Questions[1].ans = parseInt(value);
                       this.forceUpdate(); 
                     }} />
                 </View>
