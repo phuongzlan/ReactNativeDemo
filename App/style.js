@@ -5,12 +5,16 @@ var styles = StyleSheet.create({
   linearGradient: {
     flex: 1,
   },
-  content:{
+  backgroundWindows:{
+    backgroundColor: '#00537d',
+    flex: 1,
+  },
+  contentStretch:{
     paddingLeft: 10,
     paddingRight: 10,
     alignItems: 'stretch',
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'center',  
   },
   contentCenter:{
     paddingLeft: 10,
@@ -21,13 +25,12 @@ var styles = StyleSheet.create({
   },
   buttonText: {
     width: 210,
-    height: 45,
-    margin: 'auto',
-    padding: 'auto',
+    height: 47,
     backgroundColor: '#b9e986',
     borderRadius: 20,
     borderWidth: 1,
     borderStyle: 'solid',
+    alignItems: 'center',
   },
   surveyIconLarge: { 
     height: 70,
@@ -39,6 +42,11 @@ var styles = StyleSheet.create({
   surveyIconNav: {
     height: 30,
     width: 30,
+    alignItems: 'center',
+  },
+  actionIconNav: {
+    height: 20,
+    width: 20,
     alignItems: 'center',
   },
   bellIcon: {
@@ -98,11 +106,11 @@ var styles = StyleSheet.create({
   },
   panel: {
     backgroundColor: 'white',
-    width: '100%',
+    alignItems: 'stretch',
     height: 50,
+    paddingTop: 5,
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'center',
   },
   buttonQuestionSelect:{
     width: 80,
@@ -111,7 +119,7 @@ var styles = StyleSheet.create({
     borderRadius: 15,
     borderWidth: 1,
     borderStyle: 'solid',
-    color: 'black',
+    color: 'blue',
     marginRight: 5,
     fontSize: 12,
   },
@@ -130,7 +138,12 @@ var styles = StyleSheet.create({
     margin:15,
     flex: 1,
     flexDirection: 'row',
-  }
+  },
+  timeRemainingIcon:{
+    height: 130,
+    width: 130,
+    alignItems: 'center',
+  },
 });
 
 export default styles;
